@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Backend Developer Portfolio</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="static/icon/favicon.ico">
+</head>
+
+<body>
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+		<a href="#about" onclick="closeNav()">About</a>
+		<a href="#hobby" onclick="closeNav()">Hobby</a>
+		<a href="#skills" onclick="closeNav()">Skills</a>
+		<a href="#contact" onclick="closeNav()">Contact</a>
+	  </div>
+	</div>
+
+	<div style="position: fixed">
+		<nav>
+			<div class="logo"></div>
+			<button class="openbtn" style="margin-right:10px;"onclick="openNav()">☰</button>
+			<button class="openbtn" ><a href="https://www.linkedin.com/in/olaf-szyncel-53448b179/"><img src="static/icon/linkedin.png"></a></button> 
+			<button class="openbtn" ><a href="https://github.com/olafszyncel"><img src="static/icon/github.png"></a></button> 
+			<button class="openbtn" ><a href="CV_Olaf_Szyncel_en.pdf"><img src="static/icon/cv.png"></a></button> 
+			<button class="openbtn" ><a href="mailto:szyncelolaf@gmail.com"><img src="static/icon/email.png"></a></button> 
+		</nav>
+	</div>
+
+
+    <header>
+		<img class="me" src="static/icon/prawie-ja.png" alt="Photo of Olaf">
+        <div>
+            <h1 style="font-size: 2.5rem">Hi, my name is</h1>
+            <h1 style="color: #72C7EC;">Olaf Szyncel.</h1>
+            <p>I'm a passionate software engineer with a knack for backend development.</p>
+            <a href="#about" class="openbtn" >Get to know me!</a>
+        </div>
+        
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm a 3rd year Computer Science student at the University of Silesia in Katowice. I've been independently studying programming for over 3 years, completing courses like CS50, CS50P, and various FreeCodeCamp modules.</p>
+        <div class="gallery">
+            <img src="static/certificates/assembly.jpg" alt="Assembly Image">
+            <a href="https://cs50.harvard.edu/certificates/8da0a9d3-8b69-43a2-ae1c-011e30f66389"><img src="static/certificates/cs50x.png" alt="CS50x Certificate"></a>
+            <a href="https://cs50.harvard.edu/certificates/184fb1f6-e655-4c25-b0a0-c1ee7c7f6b66"><img src="static/certificates/cs50p.png" alt="CS50P Certificate"></a>
+            <a href="https://freecodecamp.org/certification/ainzuuu/javascript-algorithms-and-data-structures"><img src="static/certificates/fcc.png" alt="FreeCodeCamp Certificate"></a>
+        </div>
+    </section>
+
+    <section id="hobby">
+        <h2>Hobby</h2>
+        <p>Outside of coding, I have a wide range of interests. I enjoy sports and esports, with a particular passion for Formula 1, tennis, football, and exploring the latest in technology. In my free time, I play esports games, indulge in Neapolitan pizza, and appreciate a good craft beer.</p>
+        <div class="gallery">
+            <img src="static/hobby/game.jpg" alt="Gaming">
+            <img src="static/hobby/football.jpg" alt="Football">
+            <img src="static/hobby/beer.jpg" alt="Craft Beer">
+            <img src="static/hobby/pizza.jpg" alt="Pizza">
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="browser-simulation">
+            <div class="browser-header">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+
+                <div class="tabs">
+				  <div class="tab desktop-only" onclick="loadSkillImage('home')">Home</div>
+				  <div class="tab desktop-only" onclick="loadSkillImage('python')">Python</div>
+				  <div class="tab desktop-only" onclick="loadSkillImage('javascript')">JavaScript</div>
+				  <div class="tab desktop-only" onclick="loadSkillImage('java')">Java</div>
+				  <div class="tab desktop-only" onclick="loadSkillImage('php')">PHP</div>
+				  <div class="tab desktop-only" onclick="loadSkillImage('django')">Django</div>
+				  <div class="tab desktop-only" onclick="loadSkillImage('sql')">SQL</div>
+				  <div class="tab desktop-only" onclick="loadSkillImage('bash')">Bash</div>
+
+				 
+				  <div class="tab mobile-only" onclick="toggleMenu()">Skills<b> &#129171;</b></div>
+				  <div id="dropdownMenu" class="dropdown-content" style="display: none;">
+					<div class="tab" onclick="loadSkillImage('home'); toggleMenu()">Home</div>
+					<div class="tab" onclick="loadSkillImage('python'); toggleMenu()">Python</div>
+					<div class="tab" onclick="loadSkillImage('javascript'); toggleMenu()">JavaScript</div>
+					<div class="tab" onclick="loadSkillImage('java'); toggleMenu()">Java</div>
+					<div class="tab" onclick="loadSkillImage('php'); toggleMenu()">PHP</div>
+					<div class="tab" onclick="loadSkillImage('django'); toggleMenu()">Django</div>
+					<div class="tab" onclick="loadSkillImage('sql'); toggleMenu()">SQL</div>
+					<div class="tab" onclick="loadSkillImage('bash'); toggleMenu()">Bash</div>
+				  </div>
+				</div>
+
+            </div>
+			
+			<div class="browser-header-link">
+				<div class="tabs" id="browser-link">
+                    <a class="link-text" href="#skill">127.0.0.1/home</a>
+				</div>
+			</div>
+			
+            <div class="browser-content" id="browser-content">
+                <div class="browser-content-container">
+                    <p>Select a skill to see more details!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+		<p>E-mail me if you have any questions: <b>szyncelolaf@gmail.com</b></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Olaf Szyncel. Built with love and code.</p>
+    </footer>	
+</body>
+
+</html>
