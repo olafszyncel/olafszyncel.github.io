@@ -4,7 +4,7 @@ Welcome to my portfolio! This repository serves as a showcase of my projects, sk
 
 ## Live Website
 You can view my portfolio at the following links:
-- ###[www.olafszyncel.pl](http://www.olafszyncel.pl)
+- [www.olafszyncel.pl](http://www.olafszyncel.pl)
 - [olafszyncel.github.io](http://olafszyncel.github.io) (backup link)
 
 ## Features
