@@ -91,6 +91,18 @@ function loadSkillImage(skill) {
 				<div class="browser-content-container">
 					<ul>
 						<li>
+							SzyncPound instagram clone, written using Spring Boot
+							<ul>
+								<li><a href="https://github.com/olafszyncel/InstagramClone">Code</a></li>
+							</ul>
+						</li>
+						<li>
+							Java code passing api endpoints with swift codes 
+							<ul>
+								<li><a href="https://github.com/olafszyncel/swiftCodeRequitmentToRemitly">Code</a></li>
+							</ul>
+						</li>
+						<li>
 							Java code based on module assignments at university
 							<ul>
 								<li><a href="https://github.com/olafszyncel/PodstawyProgramowaniaJava">Code</a></li>
@@ -130,6 +142,16 @@ function loadSkillImage(skill) {
 				browserContent.innerHTML = `<img src="static/projects/python.png" alt="python skill">`;
 			}
 			browserLink.innerHTML = `<a class="link-text" href="https://cc.olafszyncel.pl">cc.olafszyncel.pl</a>`
+			break;
+
+		case 'spring':
+			var x = window.matchMedia("(max-width: 768px)");
+			if(x.matches) {
+				browserContent.innerHTML = `<img src="static/projects/springmobile.png" alt="spring skill">`;
+			} else {
+				browserContent.innerHTML = `<img src="static/projects/spring.png" alt="spring skill">`;
+			}
+			browserLink.innerHTML = `<a class="link-text" href="https://github.com/olafszyncel/InstagramClone">github.com/olafszyncel/InstagramClone</a>`
 			break;
 			
 		case 'sql':
